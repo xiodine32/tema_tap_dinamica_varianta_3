@@ -42,7 +42,7 @@ public class Main {
         try {
             Class<?> theClass = getClass(id);
             long timerDuration = runTimer(theClass);
-            System.out.printf("Time elapsed: %.8fs\n\n", timerDuration / 1000000000.0);
+            System.out.printf("\nTime elapsed: %.8fs\n\n", timerDuration / 1000000000.0);
         } catch (Exception e) {
             e.printStackTrace();
         }
