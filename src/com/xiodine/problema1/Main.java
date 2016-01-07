@@ -22,7 +22,7 @@ public class Main {
     public Main() throws Exception {
 
         // stiai ca trebuie sa fie ceva dubios si cu reflection.
-        Tester<String> tester = new Tester<>("src/com/xiodine/problema1/input.in", String.class);
+        Tester<String> tester = new Tester<>(this.getClass(), String.class);
         while (tester.has())
             run(tester.next());
     }

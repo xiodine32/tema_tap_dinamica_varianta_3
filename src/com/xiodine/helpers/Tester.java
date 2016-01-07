@@ -16,7 +16,10 @@ public class Tester<T> {
     private Class<T> tClass;
     private String className;
 
-    public Tester(String file, Class<T> tClass) {
+    public Tester(Class<?> constructingClass, Class<T> tClass) {
+        String file = constructingClass.getName();
+        file = "src." + file.substring(0, file.lastIndexOf('.')) + ".input";
+        file = file.replace('.', '/') + ".in";
         this.tClass = tClass;
         getClassName();
         try {
