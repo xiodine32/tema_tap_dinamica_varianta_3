@@ -10,6 +10,8 @@ import com.xiodine.helpers.Tester;
  * Exemplu: Cuvântul problemele se potriveşte pe masca pr?b*le (‘?’ <-> ‘o’ şi ‘*’ <-> „leme”)
  * https://leetcode.com/problems/wildcard-matching/ (2p)
  */
+
+@SuppressWarnings("unused")
 public class Main {
     public Main() throws Exception {
         Tester<String> tester = new Tester<>(this.getClass(), String.class);
