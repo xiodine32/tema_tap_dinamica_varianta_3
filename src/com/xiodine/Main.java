@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static final int PROBLEM = 3;
+    private static final int PROBLEM = 4;
     private static final int MAX_PROBLEM = 4;
     private static final boolean ASK = false;
 

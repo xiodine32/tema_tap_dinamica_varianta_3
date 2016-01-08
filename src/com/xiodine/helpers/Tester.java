@@ -12,6 +12,10 @@ import java.util.Scanner;
  */
 public class Tester<T> {
 
+    public Scanner getScanner() {
+        return scanner;
+    }
+
     private Scanner scanner;
     private Class<T> tClass;
     private String className;
@@ -39,6 +43,8 @@ public class Tester<T> {
         className = tClass.getSimpleName();
         if (className.equals("String"))
             className = "Line";
+        if (className.equals("Integer"))
+            className = "Int";
     }
 
     public T next() throws Exception {
